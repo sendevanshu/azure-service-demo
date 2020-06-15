@@ -12,5 +12,11 @@ public class HealthCheckController {
 		
 		return "Hello " + name+" !";
 	}
+
+	@RequestMapping("/ping")
+	public String ping(){
+		
+		return "Ping successful";
+	}
 	
 }
